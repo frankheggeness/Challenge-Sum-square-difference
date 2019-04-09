@@ -13,8 +13,7 @@ function SumOfASquare(naturalNumbers) {
     let currentNum = 1;
     let sum = 0;
     while (currentNum <= this.naturalNumbers) {
-      let squareOfCurrentNum = Math.pow(currentNum, 2);
-      sum += squareOfCurrentNum;
+      sum += Math.pow(currentNum, 2);
       currentNum++;
     }
     return sum;
@@ -25,16 +24,8 @@ function SumOfASquare(naturalNumbers) {
     let sum = 0;
     while (currentNum <= this.naturalNumbers) {
       sum += currentNum;
-      currentNum++
+      currentNum++;
     }
-    let squaredSum = Math.pow(sum, 2);
-    return squaredSum;
+    return Math.pow(sum, 2);
   }
 }
-
-// do work here
-
-// overwrite the object prototype, or add methods to the prototype
-// to satisfy the two method calls, sumOfSquares() and squareOfTheSums()
-
-
